@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 // icons
 import { RiArrowRightSLine } from "react-icons/ri";
-import { FaGem, FaTools } from 'react-icons/fa';
+import { FaGem, FaTools, FaPhone, FaHome } from 'react-icons/fa';
 
 const NavBar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -29,7 +29,7 @@ const NavBar = () => {
         <nav className="flex justify-between items-center">
             {/* Inicio */}
             <ul>
-                <li><Link to="#" className="flex items-center gap-2">Inicio</Link></li>
+                <li><Link to="#" className="flex items-center gap-2"><FaHome />Inicio</Link></li>
             </ul>
             {/* Joyas */}
             <ul>
@@ -60,7 +60,7 @@ const NavBar = () => {
             </ul>
             {/* Contactos */}
             <ul>
-                <li><Link to="#">Contáctanos</Link></li>
+                <li><Link to="#"><FaPhone />Contáctanos</Link></li>
             </ul>
         </nav>
     );
